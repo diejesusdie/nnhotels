@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1152">
+	<title>"NN-HOTELS" Сеть отелей в Центре Нижнего Новгорода</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id="header_menu">
+	<div class="container">
+		<a href="#option_hotel">ВЫБОР ОТЕЛЯ</a>
+		<a href="">ИНФОРМАЦИЯ О СЕТИ</a>
+		<a href="#contacts">КОНТАКТЫ</a>
+	</div>
+</section>
+
+
+<section id="header_content_informer">
+	<div class="container">
+		<div class="phone">
+			<p><a href="tel:+79040454784" class="tel">+7 (904) 045-47-84<span> - ОТЕЛЬ №7</span></a></p>
+			<p><a href="tel:+79290532346" class="tel">+7 (929) 053-23-46<span> - ПИЛИГРИМ</span></a></p>
+		</div>
+		<div class="href_map">
+			<a href="#map_content">НА КАРТЕ</a>
+		</div>
+		<div class="choice_btn">
+			<a href="#popup_help" class="btn_help open-popup-link">ПОМОЩЬ С ВЫБОРОМ</a>
+		</div>
+	</div>
+</section>
+
+<header>
+	<div class="container">
+		<h1 class="title_page">СЕТЬ ОТЕЛЕЙ В ЦЕНТРЕ НИЖНЕГО НОВГОРОДА</h1>
+
+		<form action="" method="post" id="booking_1" class="booking">
+			<h2>ПОЛУЧИТЕ ПЕРСОНАЛЬНУЮ СКИДКУ ПРИ БРОНИРОВАНИИ СЕЙЧАС</h2>
+			<div class="blavtors"></div>
+			<div id="booking_1_otv" style="display: none;"></div>
+			<input type="text" value="Форма бронирования / Главная страница / Врехняя" style="display: none" name="form_name">
+			<div class="booking_left_form">
+				<h3>Выберите даты</h3>
+				<div class="booking_date_arrival">
+				<h4>Дата заезда</h4>
+				<input type="text" class="from-input" name="date_arrival" yourbest="true"  readonly>
+				<div class="from-date">
+					<p class="date"></p>
+					<p class="month"></p>
+				</div>
+
+				</div>
+				<div class="booking_date_departure">
+				<h4>Дата выезда</h4>
+				<input type="text" class="dest-input" name="date_departure" yourbest="true" readonly>
+				<div class="dest-date">
+					<p class="date"></p>
+					<p class="month"></p>
+				</div>
+				</div>
+			</div>
+			<div class="booking_right_form">
+				<label>
+					<span>Выберите <br>количество человек</span>
+					<input type="number" value="1" name="people">
+				</label>
+				<label for=""><input type="text" placeholder="Ваше имя" name="yourname" yourbest="true"></label>
+				<label for=""><input type="phone" placeholder="Ваш номер телефона" name="yourphone" yourbest="true"></label>
+				<label class="resolution">даю согласие на обработку моих персональных данных</label>
+				<label class="label_button"><input type="button" onclick="AjaxFormRequest('booking_1_otv', 'booking_1', 'form.php')" value="Забронировать"></label>
+			</div>
+		</form>
+	</div>
+</header>
+
+<main id="option_hotel">
+	<div class="container">
+		<h1 class="tagline">ВЫБЕРИТЕ ОТЕЛЬ, В КОТОРОМ ХОТИТЕ ОСТАНОВИТЬСЯ</h1>
+		<div class="shortstory">
+			<div class="item" style="padding: 15px;border: 1px solid #fccd03;">
+				<div class="item_content">
+				<div class="image"><img src="images/hotel1.png" alt=""></div>
+				<div class="item_info">
+				<h3 class="title">ОТЕЛЬ "ПИЛИГРИМ"</h3>
+				<p>АДРЕС: </p>
+				<p>г.НИЖНИЙ НОВГОРОД, </p>
+				<p>ул.ВОЛОДАРСКОГО, 38А</p>
+				<p>+7 (929) 053-23-46</p>
+				<a href="#" class="scheme">СХЕМА ПРОЕЗДА</a>
+				<a href="page-hotel.html" class="more_btn">К СТРАНИЦЕ ОТЕЛЯ</a>
+				</div>
+				</div>
+				<div class="item_additional">
+				<div class="kreml css_sprites">ДО КРЕМЛЯ<span> 1,2КМ</span></div>
+				<div class="underground css_sprites">ДО МЕТРО<span> 1,5КМ</span></div>
+				<div class="tram css_sprites">ДО ТРАМВАЙНОЙ<br>ОСТАНОВКИ<span> 450М</span></div>
+				<div class="bus css_sprites">ДО АВТОБУСНОЙ<br>ОСТАНОВКИ<span> 700М</span></div>
+				<div class="on_foot css_sprites">ДО ул. БОЛЬШАЯ<br>ПОКРОВСКАЯ<span> 800М</span></div>
+				</div>
+			</div>
+
+			<div class="item" style="padding: 15px;border: 1px solid #fccd03;">
+				<div class="item_content">
+				<div class="image"><img src="images/hotel2.png" alt=""></div>
+				<div class="item_info">
+				<h3 class="title">ОТЕЛЬ №7</h3>
+				<p>АДРЕС: </p>
+				<p>г. НИЖНИЙ НОВГОРОД, </p>
+				<p>ул. ДОБРОЛЮБОВА, 7</p>
+				<p>+7 (953) 5533-52-57</p>
+				<a href="#" class="scheme">СХЕМА ПРОЕЗДА</a>
+				<a href="page-hotel7.html" class="more_btn">К СТРАНИЦЕ ОТЕЛЯ</a>
+				</div>
+				</div>
+				<div class="item_additional">
+				<div class="kreml css_sprites">ДО КРЕМЛЯ <span> 800М</span></div>
+				<div class="underground css_sprites">ДО МЕТРО<span> 1,9КМ</span></div>
+				<div class="tram css_sprites">ДО ТРАМВАЙНОЙ<br>ОСТАНОВКИ <span> 30М</span></div>
+				<div class="bus css_sprites">ДО АВТОБУСНОЙ<br>ОСТАНОВКИ <span> 1,1КМ</span></div>
+				<div class="on_foot css_sprites">ДО ул. БОЛЬШАЯ<br>ПОКРОВСКАЯ<span> 500М</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+<section id="advantages">
+	<div class="container">
+		<h2 class="title_block">Преимущества отелей нашей сети</h2>
+		<div class="item_advantages">
+			<div class="item css_sprites">
+				<h3>ОПЛАТА  БАНКОВСКИМИ  КАРТАМИ</h3>
+				<p>Оплачивайте <br>проживание любым <br>удобным Вам способом</p>
+			</div>
+			<div class="item css_sprites">
+				<h3>РЕГИСТРАЦИЯ ЗАЕЗДА <br>И ОБСЛУЖИВАНИЕ 24/7</h3>
+				<p>мы готовы помочь Вам в <br>любое время</p>
+			</div>
+			<div class="item css_sprites">
+				<h3>ЗАВТРАК В НОМЕР</h3>
+				<p>Подадим завтрак в <br>номер в указанное <br>Вами время</p>
+			</div>
+			<div class="item css_sprites">
+				<h3>ВСЕ НЕОБХОДИМЫЕ  ДОКУМЕНТЫ</h3>
+				<p>Постараемся <br>удовлетворить запрос <br>любого делового <br>путешественника</p>
+			</div>
+			<div class="item css_sprites">
+				<h3>УДОБНОЕ <br>РАСПОЛОЖЕНИЕ</h3>
+				<p>Мы находимся с самом <br>"сердце" города.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="map_content">
+	<div class="container"><h2 class="title_block">Наши отели на карте</h2></div>
+	<div id="map"></div>
+
+</section>
+
+<footer id="contacts">
+	<div class="container">
+		<div class="logo_hotel">
+		<a href="page-hotel.html" class="hotel_1"><img src="images/logo_hotel2.png" alt=""></a>
+		<a href="page-hotel7.html" class="hotel_2"><img src="images/logo_hotel1.png" alt=""></a>
+		</div>
+		<div class="footer_phone">
+			<p>+7 (904) 045-47-84<span> - ОТЕЛЬ №7</span></p>
+			<p>+7 (929) 053-23-46<span> - ПИЛИГРИМ</span></p>
+			<a href="#popup_feedback" class="btn_footer open-popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+		</div>
+	</div>
+</footer>
+
+<section id="footer_menu">
+	<div class="container">
+	</div>
+</section>
+
+<div id="popup_feedback" class="white-popup mfp-hide">	
+<form class="feedback_popup" action="" method="post" id="feedback_popup_call">
+	<h2>Оставить заявку</h2>
+	<p>и наши менеджеры свяжутся с Вами 
+в ближайшее время</p>
+<div class="blavtors"></div>
+			<div id="feedback_popup_call_otv" style="display: none;"></div>
+<input type="text"  name="form_name" value="Заказать обратный звонок с главной страницы" style="display: none">
+		<input name="yourname" yourbest="true" type="text" placeholder="Ваше имя" for="box1" required><label for="box1" class="validation"></label>
+	<input name="yourphone" yourbest="true" type="phone" placeholder="Ваш номер телефона" for="box2" required><label for="box2" class="validation"></label>
+	<input type="button" onclick="AjaxFormRequest('feedback_popup_call_otv', 'feedback_popup_call', 'form.php')" value="Оставить заявку">
+</form>
+</div>
+<div id="popup_help" class="white-popup mfp-hide">	
+<form class="feedback_popup" action="" method="post" id="feedback_popup_help">
+	<h2>Поможем с выбором отеля</h2>
+<div class="blavtors"></div>
+			<div id="feedback_popup_help_otv" style="display: none;"></div>
+<input type="text" name="form_name" value="Заказать звонок с главной страницы / Помощь с выбором отеля" style="display: none">
+		<input type="text" placeholder="Ваше имя" name="yourname" yourbest="true" required><label for="box1" class="validation"></label>
+	<input name="yourphone" type="phone" placeholder="Ваш номер телефона" yourbest="true" required><label for="box2" class="validation"></label>
+	<input type="button" onclick="AjaxFormRequest('feedback_popup_help_otv', 'feedback_popup_help', 'form.php')" value="Оставить заявку">
+</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.datetimepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
+<script src="js/main.js"></script>
+<script>
+	$(document).ready(function() {
+  $("a.fancybox").fancybox()
+});	
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [56.324256, 43.99374599999999],
+            zoom: 15,
+            controls: []
+        }, {
+           
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            balloonContent: 'Отель №7 Адрес: г.Нижний Новгород, ул.Добролюбова, 7 +7 (904) 045-47-84'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'http://ipic.su/img/img7/fs/map1.1546087877.png',
+            // Размеры метки.
+            iconImageSize: [80, 100],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-30, -60]
+        }),
+
+        myPlacemarkWithContent = new ymaps.Placemark([56.319347, 44.01165739999999], {
+            balloonContent: 'Отель Пилигрим Адрес:г.Нижний Новгород, ул.Володарского, 38а +7 (929) 053-23-46',
+            iconContent: '12'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'http://ipic.su/img/img7/fs/map2.1546088167.png',
+            // Размеры метки.
+            iconImageSize: [80, 100],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-30, -60],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
+});
+
+
+
+</script>
+</body>
+</html>

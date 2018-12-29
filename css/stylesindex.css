@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'ft anima';
+    src: url('../fonts/ftanima-Regular.eot');
+    src: url('../fonts/ftanima-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ftanima-Regular.woff2') format('woff2'),
+        url('../fonts/ftanima-Regular.woff') format('woff'),
+        url('../fonts/ftanima-Regular.ttf') format('truetype'),
+        url('../fonts/ftanima-Regular.svg#ftanima-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ft anima Med';
+    src: url('../fonts/ftanima-Medium.eot');
+    src: url('../fonts/ftanima-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ftanima-Medium.woff2') format('woff2'),
+        url('../fonts/ftanima-Medium.woff') format('woff'),
+        url('../fonts/ftanima-Medium.ttf') format('truetype'),
+        url('../fonts/ftanima-Medium.svg#ftanima-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+	margin:0;
+	padding:0;
+	letter-spacing:normal;
+	text-decoration:none;
+	position:relative;
+	font-weight: normal;
+	letter-spacing: 1.2px;
+}
+body{
+	font:16px 'ft anima';
+	background-color:#fff;
+	position:relative;
+	overflow-x: hidden;
+}
+.container {
+	display:block;
+	margin:0 auto;
+	max-width: 1050px;
+}
+
+.css_sprites:after{
+	background-image: url(../images/css_sprites3.png);
+	content: '';
+}
+body.page_hotel section#header_menu {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+section#header_menu {
+    background-color: #8a60b3;
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+section#header_menu a {
+    color: #fff;
+    padding: 5px 40px;
+    display: inline-block;
+}
+#header_content_informer {
+	z-index: 3;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.phone {
+    text-align: left;
+    width: 35.7%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 0 0 0 !important;
+}
+p {
+    display: block;
+    font-size: 23.3px;
+    color: #8a60b3;
+}
+span {
+    font-size: 18px;
+}

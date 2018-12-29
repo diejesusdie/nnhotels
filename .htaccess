@@ -1,0 +1,15 @@
+AddDefaultCharset utf-8
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Редиректы
+RewriteRule ^page/([0-9]+)(/?)$ index.html [L]
+
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ sik.az/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html
